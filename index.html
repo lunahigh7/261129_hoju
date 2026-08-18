@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="2026 시드니·멜버른 12일 여행 지도와 추천 동선" />
+  <title>Across the Blue — Sydney & Melbourne</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Noto+Sans+KR:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="hero">
+    <nav><a class="brand" href="#top">ACROSS THE BLUE</a><div><a href="#map-section">지도</a><a href="#route-section">추천 동선</a><a href="#tips">여행 팁</a></div></nav>
+    <div class="hero-copy" id="top">
+      <p class="eyebrow">AUSTRALIA · SUMMER 2026</p>
+      <h1>Sydney <i>to</i><br>Melbourne</h1>
+      <p class="lead">항구의 푸른빛에서 골목의 커피 향까지.<br>12일 동안 천천히 만나는 두 도시.</p>
+      <div class="date-chip"><span>11.29</span><b>→</b><span>12.10</span><small>11박 12일</small></div>
+    </div>
+    <div class="scroll">EXPLORE <span>↓</span></div>
+  </header>
+
+  <main>
+    <section class="intro">
+      <p class="section-no">01 / OVERVIEW</p>
+      <div><h2>두 도시,<br><em>하나의 여름</em></h2></div>
+      <div class="intro-copy"><p>첫 6일은 시드니의 하버·해변·블루마운틴을, 다음 6일은 멜버른의 골목·미식·그레이트 오션 로드를 담았습니다.</p><div class="city-stats"><span><b>6</b> SYDNEY DAYS</span><span><b>6</b> MELBOURNE DAYS</span><span><b>32</b> CURATED SPOTS</span></div></div>
+    </section>
+
+    <section id="map-section" class="map-section">
+      <div class="section-head"><div><p class="section-no">02 / DISCOVER</p><h2>취향대로 찾는<br><em>여행 지도</em></h2></div><p>카테고리를 눌러 장소를 골라보세요.<br>마커를 선택하면 지도와 상세 정보를 연결합니다.</p></div>
+      <div class="filters" id="filters"></div>
+      <div class="map-layout"><div id="map"></div><aside><div class="spot-count"><span id="spotCount">0</span> PLACES</div><div id="spotList" class="spot-list"></div></aside></div>
+    </section>
+
+    <section id="route-section" class="routes">
+      <div class="section-head light"><div><p class="section-no">03 / ITINERARY</p><h2>하루가 자연스럽게<br><em>이어지는 동선</em></h2></div><p>가까운 장소끼리 묶어 이동 피로를 줄였습니다.<br>날씨에 따라 같은 도시의 날짜를 바꿔도 좋아요.</p></div>
+      <div class="city-tabs"><button class="active" data-city="sydney">SYDNEY · 6 DAYS</button><button data-city="melbourne">MELBOURNE · 6 DAYS</button></div>
+      <div id="routeCards" class="route-cards"></div>
+    </section>
+
+    <section id="tips" class="tips">
+      <p class="section-no">04 / BEFORE YOU GO</p><h2>작지만 중요한<br><em>여행 메모</em></h2>
+      <div class="tip-grid"><article><b>01</b><h3>교통</h3><p>시드니는 컨택트리스 카드/Opal, 멜버른은 myki를 이용하세요. 멜버른 CBD는 Free Tram Zone입니다.</p></article><article><b>02</b><h3>날씨</h3><p>초여름이지만 일교차와 강한 자외선에 대비해 얇은 겉옷, 선크림, 모자를 챙기세요.</p></article><article><b>03</b><h3>예약</h3><p>BridgeClimb, 오페라, 인기 레스토랑, 그레이트 오션 로드는 미리 예약하는 편이 안전합니다.</p></article><article><b>04</b><h3>확인</h3><p>영업시간·휴무·입장료는 바뀔 수 있습니다. 카드의 Google Maps와 공식 사이트에서 출발 전 재확인하세요.</p></article></div>
+      <div class="source-note"><b>RESEARCH NOTE</b><p>공식 관광청·도시 방문자 지도와 Google Maps 검색 결과를 중심으로 구성했습니다. 네이버 블로그는 원문 자동 접근 제한으로, 공개 검색에서 반복 언급된 후보를 참고해 공식 정보와 교차 검토했습니다.</p></div>
+    </section>
+  </main>
+  <footer><span>ACROSS THE BLUE</span><p>2026.11.29 — 12.10 · SYDNEY & MELBOURNE</p><a href="#top">BACK TO TOP ↑</a></footer>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script><script src="app.js"></script>
+</body></html>
